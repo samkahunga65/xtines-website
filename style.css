@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    max-width: 100vw;
+}
+#navbar {
+    display: flex;
+    background-color: #545e5988;
+    color: white;
+    justify-content: space-between;
+}
+
+#navbar #my-name h1 {
+    margin-left: 20px;
+    font-family: 'Elsie', cursive;
+    font-size: 36px;
+}
+#navbar #other {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    padding-right: 40px;
+}
+#navbar #other button {
+    margin: 12px;
+    background-color: #545e5900;
+    color: white;
+    height: 27px;
+    border: 0px;
+    border-radius: 5px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    font-size: 16px;
+
+}
+#navbar #other button:hover {
+    background: rgba(234, 225, 223, 0.21);
+}
+#landing {
+    display: block;
+    padding-top: 100px;
+    width: 100vw;
+    max-width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-self:flex-end;
+    color: white;
+    background: linear-gradient(180deg, #545E59 100%, #667761 100%);
+    z-index: -1;
+    padding-top:200px;
+}
+#writings {
+    width: 50%;
+    max-width: 600px;
+    padding: 0px 70px 0px;
+    margin: 0;
+}
+#writings h1 {
+    font-size: 36px;
+}
+#writings p {
+    font-size: 21px;
+}
+#picture {
+    height: 50vh;
+    margin-right: 124px;
+}
+#contacts {
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+.top-part {
+    display: flex;
+    height: 90px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.top-part h1 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 36px;
+}
+.mid-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.mid-part #email{
+    width: 185px;
+}
+.mid-part textarea {
+    width: 185px;
+}
+.mid-part .submit {
+    background-color: rgba(0, 0, 0, 0.21);
+    border: 1px solid white;
+    color: white;
+    height: 27px;
+    border-radius: 5px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    font-size: 16px;
+}
+.mid-part .submit:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+.bottom-part {
+    display: flex;
+    max-width: 50vw;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.bottom-part .contact-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-part .contact-point img {
+    height: 30px;
+    margin-right: 5px;
+}
+#email-png {
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
+}
