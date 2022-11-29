@@ -90,6 +90,9 @@ body {
     line-height: 50px;
     font-weight: bold;
 }
+#navbar #hamburger {
+    display: none;
+}
 #writings {
     width: 50%;
     max-width: 600px;
@@ -168,4 +171,60 @@ body {
 }
 #email-png {
     filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
+}
+
+
+@media only screen and (max-width: 1350px) {
+    .and-line {
+        margin-right: 0px;
+        margin-top: 0;
+        font-size: 36px;
+        float: none;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    #landing {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 10px;
+        text-align: left;
+        padding-top: 100px;
+        height: fit-content;
+        min-height: 90vh;
+    }
+    #landing #writings {
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 12; /* number of lines to show */
+                line-clamp: 12; 
+        -webkit-box-orient: vertical;
+    }
+    #picture {
+        height: fit-content;
+        margin-right: 0;
+    }
+    #landing #picture img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+    }
+    #navbar {
+        height: 90px;
+    }
+    #navbar #other {
+        display: none;
+    }
+    #navbar #hamburger {
+        display: inline;
+        width: 70px;
+        height: 90px;
+    }
+    #navbar #hamburger img {
+        height: 40px;
+        margin: 25px 15px;
+    }
 }
