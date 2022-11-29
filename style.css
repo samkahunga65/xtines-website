@@ -197,6 +197,7 @@ body {
         margin: 0 auto;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-size: 32px;
         display: -webkit-box;
         -webkit-line-clamp: 12; /* number of lines to show */
                 line-clamp: 12; 
