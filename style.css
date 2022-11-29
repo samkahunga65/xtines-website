@@ -228,4 +228,7 @@ body {
         height: 40px;
         margin: 25px 15px;
     }
+    .contact-point p {
+        display: none;
+    }
 }
