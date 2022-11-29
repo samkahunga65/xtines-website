@@ -8,6 +8,7 @@ body {
     overflow: scroll;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #nav {
@@ -173,15 +174,18 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
     #landing {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        flex-basis: 10px;
+        align-items: flex-end; */
         text-align: left;
-        padding-top: 100px;
+        /* padding-top: 100px; */
         height: fit-content;
         min-height: 90vh;
-        width: 100%;
+        min-width: 100%;
     }
     #landing #writings h1 {
         font-size: 27px;
@@ -212,7 +216,8 @@ body {
         margin-right: auto;
         margin-top: 20%;
         height: 80%;
-        max-height: 340px;
+        max-height: 100%;
+        max-width: 400px;
     }
     #navbar {
         height: 90px;
