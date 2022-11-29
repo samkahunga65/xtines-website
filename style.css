@@ -193,14 +193,17 @@ body {
         height: fit-content;
         min-height: 90vh;
     }
+    #landing #writings h1 {
+        font-size: 27px;
+    }
     #landing #writings {
         margin: 0 auto;
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 32px;
         display: -webkit-box;
-        -webkit-line-clamp: 12; /* number of lines to show */
-                line-clamp: 12; 
+        -webkit-line-clamp: 10; /* number of lines to show */
+                line-clamp: 10; 
         -webkit-box-orient: vertical;
     }
     #picture {
