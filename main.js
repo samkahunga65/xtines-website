@@ -4,4 +4,24 @@ new Glide('.glide', {
     focusAt: 'center',
     autoplay: 2700
 }).mount()
-console.log("sdaasd");
+
+document.getElementById("about-btn").addEventListener("click", e => {
+    document.getElementById("landing").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+document.getElementById("work-btn").addEventListener("click", e => {
+    document.getElementById("work").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+document.getElementById("interests-btn").addEventListener("click", e => {
+    document.getElementById("interests").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+document.getElementById("contacts-btn").addEventListener("click", e => {
+    document.getElementById("contacts").scrollIntoView({
+        behavior: "smooth"
+    });
+});
