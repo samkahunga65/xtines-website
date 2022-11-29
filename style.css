@@ -1,8 +1,4 @@
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     margin: 0;
     font-family: 'Lato', sans-serif;
     overflow: scroll;
@@ -172,7 +168,27 @@ body {
 #email-png {
     filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
 }
-
+#work {
+    background-color: #49524b;
+    color: white;
+}
+#places-i-worked {
+    padding: 10px;
+}
+.place-of-work-text h1 {
+    margin: 0;
+}
+.place-of-work {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+.place-of-work-text {
+    width: 50%;
+}
+.place-of-work img {
+    width: 40%;
+}
 @media only screen and (max-width: 768px) {
     body {
         width: 100%;
@@ -236,4 +252,26 @@ body {
     .contact-point p {
         display: none;
     }
+    .place-of-work {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .place-of-work img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .place-of-work-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .place-of-work-text h1 {
+        text-align: center;
+    }
+    .place-of-work-text p {
+        width: 80%;
+    }
+    
 }
