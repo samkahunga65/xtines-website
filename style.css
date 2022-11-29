@@ -21,6 +21,7 @@ body {
     background-color: #545e5988;
     color: white;
     justify-content: space-between;
+    max-height: 70px;
 }
 
 #navbar #my-name h1 {
@@ -181,13 +182,47 @@ body {
 .place-of-work {
     display: flex;
     justify-content: space-between;
-    margin: 20px 30px;
+    margin: 50px;
 }
 .place-of-work-text {
     width: 50%;
 }
 .place-of-work img {
     width: 40%;
+}
+#interests {
+    background-color: #545e59;
+}
+.glide__slide {
+    list-style: none;
+}
+.glide__slides img {
+    width: 70%;
+    max-width: 1000px;
+}
+.glide__slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1000px;
+}
+.glide__track {
+    width: 90%;
+    /* margin: 0 auto; */
+}
+#interests h1 {
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    margin-top: 30px;
+}
+.bullet-container {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 @media only screen and (max-width: 768px) {
     body {
@@ -273,5 +308,16 @@ body {
     .place-of-work-text p {
         width: 80%;
     }
-    
+    .glide__slides img {
+        display: inline-block;
+        width: 80%;
+    }
+    .glide__slide {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .glide__track {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

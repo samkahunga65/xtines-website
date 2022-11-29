@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Elsie&family=Ubuntu:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
     </style>
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
     <title>Christine</title>
 </head>
 <body>
@@ -21,7 +25,6 @@
                 <button>about</button>
                 <button>work</button>
                 <button>interests</button>
-                <button>education</button>
                 <button>contacts</button>
             </div>
             <div id="hamburger">
@@ -42,7 +45,7 @@
         </div>
     </div>
     <div id="work">
-        <ul id="places-i-worked">
+        <div id="places-i-worked">
             <div class="place-of-work">
                 <img src="./assets/Joshua-Mwaniki-Country-Director-Andela-Kenya-with-Andela-developers.webp" alt="image-of-place-of-work">
                 <div class="place-of-work-text">
@@ -59,10 +62,28 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex deserunt corporis reiciendis ut quos eaque sed minima dolorem vitae aperiam.</p>
                 </div>
             </div>
-        </ul>
+        </div>
     </div>
     <div id="interests">
-
+        <h1>My Interests</h1>
+        <div id="carousel">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="./assets/cat0.jpg" alt="interests"></li>
+                    <li class="glide__slide"><img src="./assets/cat1.jpg" alt="interests"></li>
+                    <li class="glide__slide"><img src="./assets/cat2.jpg" alt="interests"></li>
+                  </ul>
+                </div>
+                <div class="bullet-container">
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                      </div>
+                </div>
+                
+            </div>
     </div>
     <div id="contacts">
         <div class="top-part">
@@ -92,6 +113,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="main.js"></script>
 </body>
 </html>
