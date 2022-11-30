@@ -230,6 +230,36 @@ body {
     display: flex;
     justify-content: space-around;
 }
+#carousel2 {
+    width: 100vw;
+    height: fit-content;
+}
+#slides-container {
+	position: relative;
+	width: 100%;
+	height: fit-content;
+}
+.slide {
+	position: absolute;
+	width: 100%;
+	height: fit-content;
+	margin: 0 auto;
+}
+.slide img {
+	width:  100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+#car-buttons {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
+}
+#car-buttons img {
+	height: 50px;
+	z-index: 5;
+}
 @media only screen and (max-width: 768px) {
     body {
         width: 100%;
