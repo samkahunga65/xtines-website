@@ -46,3 +46,23 @@ forwardCarouselButton.addEventListener("click", ()=>{
 		slidesContainer.scrollLeft += slideWidth;
 	}
 })
+
+//reveal and hide menu in mobile mode
+const menuDiv = document.getElementById("other")
+const menuButton = document.getElementById("hamburger")
+let menuToggled = true;
+menuButton.addEventListener("click", () => {
+	if (!menuToggled) {
+		menuDiv.style.top = "0px"
+		menuDiv.style.display = "block"
+		menuToggled = true
+	}
+})
+const menuButtons = document.querySelectorAll("#other > button");
+
+menuButtons.forEach(item => {
+	item.addEventListener("click", () => {
+		menuToggled = false
+		menuDiv.style.top = "-264px"
+	})
+})
