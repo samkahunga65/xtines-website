@@ -77,3 +77,16 @@ document.getElementById("github-contact").addEventListener("click", () => {
 document.getElementById("linkedin-contact").addEventListener("click", () => {
 	window.open("https://www.linkedin.com/in/christine-macharia-54091058/")
 })
+
+//resizing functions
+const placeIWorkedDiv = document.getElementById("places-i-worked");
+const workDiv = document.getElementById("work");
+const resizeTimelineWindow = () => {
+	if (workDiv.offsetWidth < 768) {
+		workDiv.style.height = `${placeIWorkedDiv.offsetHeight * 1.1}px`
+	} else {
+		workDiv.style.height = `${placeIWorkedDiv.offsetHeight * 1.2}px`
+	}
+}
+setInterval(()=> resizeTimelineWindow(), 200)
+// window.onresize = resizeTimelineWindow()

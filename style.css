@@ -187,20 +187,23 @@ body {
     filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
 }
 #work {
+    position: relative;
     background-color: #49524b;
     color: white;
 	scroll-margin-top: 64px;
 }
 #places-i-worked {
+    position: absolute;
     padding: 10px;
+    height: fit-content;
 }
 .place-of-work-text h1 {
     margin: 0;
 }
 .place-of-work {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 50px;
 }
 .place-of-work-text {
     width: 50%;
@@ -291,7 +294,60 @@ body {
 	height: 50px;
 	z-index: 5;
 }
+#places-i-worked .place-of-work {
+    position: relative;
+    background-color: #667761;
+    width: 40%;
+    z-index: 1;
+}
+#places-i-worked .place-of-work img:nth-child(odd) {
+    border-radius: 0px 0px 0px 20px;
+}
+#places-i-worked .place-of-work:nth-child(odd) {
+    float: right;
+    clear: left;
+    border-radius: 0px 20px 20px 20px;
+    transform: translateX(-20%);
+}
 
+#places-i-worked .place-of-work img:nth-child(even) {
+    border-radius: 20px 20px 20px 20px!important;
+}
+#places-i-worked .place-of-work:nth-child(even) {
+    float: left;
+    clear: right;
+    border-radius: 20px 0px 20px 20px!important;
+    transform: translateX(20%);
+}
+#places-i-worked .place-of-work::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #6C796F;
+    top: 0;
+}
+#places-i-worked .place-of-work:nth-child(odd)::after {
+    transform: translate(-50%, -50%);
+    left: -5%;
+}
+#places-i-worked .place-of-work:nth-child(even)::after {
+    transform: translate(50%, -50%);
+    right: -5%;
+}
+#places-i-worked::before {
+    position: absolute;
+    content: "";
+    border: 1px solid white;
+    width: 0px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#places-i-worked .place-of-work:hover:after {
+    background-color: #DFE8EA;
+}
 
 @media only screen and (max-width: 768px) {
     body {
@@ -390,7 +446,29 @@ body {
         flex-direction: column;
         margin-top: 20px;
     }
-    .place-of-work img {
+    #places-i-worked::before {
+        display: none;
+    }
+    #places-i-worked .place-of-work::after {
+        display: none;
+    }
+    #work #places-i-worked {
+        position: relative;
+    }
+    #work #places-i-worked .place-of-work {
+        float: none;
+        clear: none;
+        width: 100%;
+        left: 0;
+        right: 0;
+        transform: translateX(0px);
+        border-radius: 0;
+        background-color: rgba(0, 0, 0, 0);
+        margin-bottom: 20px;
+    }
+    
+    #work #places-i-worked .place-of-work img {
+        border-radius: 0px!important;
         display: block;
         margin-left: auto;
         margin-right: auto;
