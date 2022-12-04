@@ -50,7 +50,7 @@ forwardCarouselButton.addEventListener("click", ()=>{
 //reveal and hide menu in mobile mode
 const menuDiv = document.getElementById("other")
 const menuButton = document.getElementById("hamburger")
-let menuToggled = true;
+let menuToggled = false;
 menuButton.addEventListener("click", () => {
 	if (!menuToggled) {
 		menuDiv.style.top = "0px"

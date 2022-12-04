@@ -343,7 +343,7 @@ body {
         flex-direction: column;
         justify-content: center;
         padding-top: 64px;
-        top: 0px;
+        top: -264px;
         background-color: #545e59;
         z-index: 1;
         transition: 0.4s;
