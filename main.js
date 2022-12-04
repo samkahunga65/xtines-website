@@ -66,3 +66,14 @@ menuButtons.forEach(item => {
 		menuDiv.style.top = "-264px"
 	})
 })
+
+// add functionality to link icons
+document.getElementById("email-contact").addEventListener("click", () => {
+	window.open("mailto:xyz@gmail.com")
+})
+document.getElementById("github-contact").addEventListener("click", () => {
+	window.open("https://www.github.com")
+})
+document.getElementById("linkedin-contact").addEventListener("click", () => {
+	window.open("https://www.linkedin.com/in/christine-macharia-54091058/")
+})
